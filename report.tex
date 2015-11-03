@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[francais]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{makeidx}
+\makeindex
+%\usepackage{url}
+%\usepackage{hyperref} % make them clickable instead of url
+\usepackage[pdftex,
+            pdfauthor={Jan Krause},
+            pdftitle={A Selection of Research Data Management Tools Throughout the Data Lifecycle},
+            pdfsubject={Research data management tools for data discovery, acquisition, analysis, collaboration, writing and publication},
+            pdfkeywords={RDM, DMP, data lifecycle},
+            pdfproducer={Latex},
+            pdfcreator={pdflatex}]{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage[backend=bibtex, sorting=nyt]{biblatex}
+\addbibresource[label=mainbib]{./bibliography/RDMtools.bib}
+%\usepackage{multirow}
+
+\begin{document}
+
+\input{./sections/000_titlepage.tex}
+
+\tableofcontents
+\newpage
+\printindex
+
+\newpage
+\section{Abstract}
+\input{./sections/100_introduction.tex}
+
+\newpage
+\input{./sections/200_main_matter.tex}
+
+%\newpage
+%\section{Conclusion}
+%\input{./sections/400_conclusion.tex}
+
+\newpage
+%\bibliographystyle{plain}
+%\printbibliography
+\printbibliography[title={Bibliography}]
+
+\end{document}

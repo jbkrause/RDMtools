@@ -1,0 +1,21 @@
+This repository contains the source LaTeX for the document:
+
+License : Crative Commons By Share Alike v4.0
+
+Author : Jan Krause / jan.krause@epfl.ch
+
+Date of first version: 15 september 2015 
+
+J. Krause. A Selection of Research Data Management Tools Throughout the Data Lifecycle, 2015.
+http://infoscience.epfl.ch/record/211157?ln=en
+http://infoscience.epfl.ch/record/211157/files/Selection_of_RDM_Tools__Jan_Krause_1.pdf
+
+To compile it, run form terminal:
+
+pdflatex report.tex
+bibtex report.aux
+pdflatex report.tex
+pdflatex report.tex
+makeindex report
+pdflatex report.tex
+pdflatex report.tex
